@@ -8,7 +8,7 @@ jobs:
     runs-on: windows-2019
     steps:
       - name: Check out code
-        uses: actions/checkout@master
+        uses: actions/checkout@v2
       - name: Install Chef Workstation
         run: . { iwr -useb https://omnitruck.chef.io/install.ps1 } | iex; install -channel stable -project chef-workstation
         shell: powershell
@@ -30,7 +30,7 @@ jobs:
     runs-on: windows-2019
     steps:
       - name: Check out code
-        uses: actions/checkout@master
+        uses: actions/checkout@v2
       - name: Install Chef Workstation
         run: . { iwr -useb https://omnitruck.chef.io/install.ps1 } | iex; install -channel stable -project chef-workstation
         shell: powershell
